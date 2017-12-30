@@ -1,0 +1,6 @@
+<div>
+    <h2>{{$ctrl.name}}</h2>
+    <rep-editor ng-repeat="rep in $ctrl.reps" rep="rep" editable="$ctrl.editable"></rep-editor>
+    <button ng-if="$ctrl.editable" ng-click="$ctrl.addRep()">Add reps</button>
+    <button ng-if="!$ctrl.editable" ng-click="$ctrl.delete()">Delete rep set</button>
+</div>

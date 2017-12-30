@@ -1,0 +1,10 @@
+<div>
+    <span ng-if="$ctrl.showNotification">{{$ctrl.notification}}</span>
+    <rep-set-editor ng-repeat="repSet in $ctrl.repSets"
+                    rep-set="repSet" on-delete="$ctrl.deleteRepSet(repSetToDelete)"></rep-set-editor>
+    <div>
+        <button ng-if="!$ctrl.editing" ng-click="$ctrl.addRepSet()">Add rep set</button>
+        <button ng-if="$ctrl.editing" ng-click="$ctrl.saveRepSet()">Save</button>
+        <button ng-if="$ctrl.editing" ng-click="$ctrl.cancel()">Cancel</button>
+    </div>
+</div>

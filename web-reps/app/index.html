@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="repsApp" ng-controller="appCtrl as $ctrl">
+<head>
+  <meta charset="utf-8">
+  <title>Reps</title>
+  <meta name="description" content="Do reps">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <h1>{{$ctrl.title}}</h1>
+
+  <reps></reps>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="app.js"></script>
+  <script src="component/reps.component.js"></script>
+  <script src="component/repSetEditor.component.js"></script>
+  <script src="component/repEditor.component.js"></script>
+  <script src="service/repSet.service.js"></script>
+</body>
+</html>
