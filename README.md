@@ -8,7 +8,7 @@ AngularJS and Spring proto for recording reps at gym
 
 ## In case you want to try it
 
-- Setup PostgreSQL database (database "routine", schema "public")
+- Setup PostgreSQL database (database "routine", schema "public"):
 
 ```
 CREATE TABLE public.rep_set
@@ -44,6 +44,7 @@ ALTER TABLE public.rep
     OWNER to postgres;
 ```
 
+- Set database credentials in src\main\resources\application.properties
 - Install and run
 
 ```
